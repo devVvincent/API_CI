@@ -20,10 +20,9 @@ public class WeatherForecastTests : IClassFixture<WebApplicationFactory<Program>
         Assert.NotNull(forecasts);
         Assert.Equal(5, forecasts.Length);
     }
-    
+
     [Fact]
-    public void WeatherForecast_Constructor_AssignsProperties()
-    {
+    public void WeatherForecast_Constructor_AssignsProperties() {
         var date = DateOnly.FromDateTime(DateTime.Now);
         var temperatureC = 20;
         var summary = "Sunny";
